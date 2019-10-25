@@ -3,18 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/network-policies/calico/install_calico/</loc>
-    <lastmod>2018-11-08T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/network-policies/calico/stars_policy_demo/create_resources/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/</loc>
-    <lastmod>2018-11-08T08:30:11-07:00</lastmod>
+    <lastmod>2018-09-18T16:01:14-05:00</lastmod>
   </url>
   
   <url>
@@ -22,102 +12,8 @@
   </url>
   
   <url>
-    <loc>/network-policies/calico/stars_policy_demo/default_policy/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/network-policies/calico/stars_policy_demo/apply_network_policies/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/network-policies/calico/stars_policy_demo/directional_traffic/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/monitoring/prereqs/</loc>
-    <lastmod>2018-10-14T19:56:14-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/weave_flux/prereqs/</loc>
-    <lastmod>2018-10-14T19:56:14-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/deploy/applications/</loc>
     <lastmod>2018-09-18T16:01:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/network-policies/calico/stars_policy_demo/cleanup/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/statefulset/storageclass/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/helm_root/helm_intro/install/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/healthchecks/livenessprobe/</loc>
-  </url>
-  
-  <url>
-    <loc>/kubeflow/install/</loc>
-    <lastmod>2019-08-22T00:00:00-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/exposing_service/connecting/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/custom_resource_definition/creating_crd/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/assigning_pods/node_selector/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/batch/introduction/</loc>
-    <lastmod>2018-11-18T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_istio/introduction/</loc>
-    <lastmod>2018-11-13T16:36:24+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/irsa/preparation/</loc>
-    <lastmod>2018-11-13T16:36:24+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/create_the_k8s_app/</loc>
-    <lastmod>2018-11-13T16:32:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/monitoring/deploy-prometheus/</loc>
-    <lastmod>2018-10-14T20:33:02-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/intro_to_rbac/intro/</loc>
-    <lastmod>2018-10-03T10:14:46-07:00</lastmod>
   </url>
   
   <url>
@@ -131,64 +27,8 @@
   </url>
   
   <url>
-    <loc>/network-policies/tigera/register/</loc>
-    <lastmod>2018-08-07T13:15:13-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/spotworkers/workers/</loc>
-    <lastmod>2018-08-07T11:05:19-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/scaling/deploy_hpa/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/logging/prereqs/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/statefulset/configmap/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/helm_root/helm_micro/create_chart/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/dashboard/dashboard/</loc>
     <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/create_the_k8s_app/prereqs/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/healthchecks/readinessprobe/</loc>
-  </url>
-  
-  <url>
-    <loc>/codepipeline/role/</loc>
-  </url>
-  
-  <url>
-    <loc>/network-policies/calico/</loc>
-    <lastmod>2018-11-08T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/weave_flux/githubsetup/</loc>
-  </url>
-  
-  <url>
-    <loc>/x-ray/role/</loc>
   </url>
   
   <url>
@@ -196,130 +36,11 @@
   </url>
   
   <url>
-    <loc>/advanced-networking/secondary_cidr/</loc>
-    <lastmod>2019-02-08T00:35:29-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/exposing_service/accessing/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/assigning_pods/affinity/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/custom_resource_definition/creating_co/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/intro_to_rbac/install_test_pods/</loc>
-    <lastmod>2018-10-03T10:14:46-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/x-ray/x-ray-daemon/</loc>
-  </url>
-  
-  <url>
-    <loc>/codepipeline/configmap/</loc>
-  </url>
-  
-  <url>
-    <loc>/exposing_service/exposing/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/assigning_pods/affinity_usecases/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/x-ray/microservices/</loc>
-  </url>
-  
-  <url>
-    <loc>/codepipeline/forksample/</loc>
-  </url>
-  
-  <url>
-    <loc>/assigning_pods/cleaning/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/exposing_service/ingress/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/codepipeline/githubcredentials/</loc>
-  </url>
-  
-  <url>
-    <loc>/x-ray/x-ray/</loc>
-  </url>
-  
-  <url>
-    <loc>/custom_resource_definition/cleaning/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/exposing_service/ingress_controller/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/exposing_service/ingress_controller_alb/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/x-ray/cleanup/</loc>
-  </url>
-  
-  <url>
-    <loc>/codepipeline/codepipeline/</loc>
-  </url>
-  
-  <url>
     <loc>/prerequisites/workspace/</loc>
   </url>
   
   <url>
-    <loc>/exposing_service/cleaning/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/monitoring/deploy-grafana/</loc>
-    <lastmod>2018-10-14T20:54:13-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/statefulset/services/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/prerequisites/k8stools/</loc>
-  </url>
-  
-  <url>
-    <loc>/weave_flux/installweaveflux/</loc>
-  </url>
-  
-  <url>
-    <loc>/codepipeline/change/</loc>
-  </url>
-  
-  <url>
-    <loc>/codepipeline/cleanup/</loc>
   </url>
   
   <url>
@@ -332,51 +53,6 @@
   
   <url>
     <loc>/prerequisites/workspaceiam/</loc>
-  </url>
-  
-  <url>
-    <loc>/kubeflow/dashboard/</loc>
-    <lastmod>2019-08-22T00:00:00-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/advanced-networking/secondary_cidr/prerequisites/</loc>
-    <lastmod>2019-02-08T00:35:29-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/batch/jobs/</loc>
-    <lastmod>2018-11-18T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_istio/download/</loc>
-    <lastmod>2018-11-13T16:36:43+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/irsa/oidc-provider/</loc>
-    <lastmod>2018-11-13T16:36:24+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/create_app_mesh_components/</loc>
-    <lastmod>2018-11-13T16:32:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/monitoring/dashboards/</loc>
-    <lastmod>2018-10-14T21:03:43-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/intro_to_rbac/create_iam_user/</loc>
-    <lastmod>2018-10-03T10:14:46-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/introduction/basics/</loc>
-    <lastmod>2018-10-03T10:14:32-07:00</lastmod>
   </url>
   
   <url>
@@ -395,70 +71,12 @@
   </url>
   
   <url>
-    <loc>/tabs-example/tabs/eksctl/</loc>
-    <lastmod>2018-08-07T13:34:24-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/spotworkers/deployhandler/</loc>
-    <lastmod>2018-08-07T12:32:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/create_the_k8s_app/clone_repo/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/statefulset/statefulset/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/helm_root/helm_micro/customize/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/jenkins/deploy/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/logging/setup_es/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/scaling/test_hpa/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/weave_flux/codepipeline/</loc>
-  </url>
-  
-  <url>
-    <loc>/network-policies/tigera/</loc>
-    <lastmod>2018-08-07T13:15:13-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/eksctl/</loc>
     <lastmod>2018-08-07T13:31:55-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/network-policies/tigera/environment/</loc>
-  </url>
-  
-  <url>
     <loc>/prerequisites/clone/</loc>
-  </url>
-  
-  <url>
-    <loc>/monitoring/cleanup/</loc>
-    <lastmod>2018-10-14T21:03:30-04:00</lastmod>
   </url>
   
   <url>
@@ -467,70 +85,12 @@
   </url>
   
   <url>
-    <loc>/statefulset/testmysql/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/healthchecks/cleanup/</loc>
-  </url>
-  
-  <url>
-    <loc>/weave_flux/deploymentmanifests/</loc>
-  </url>
-  
-  <url>
     <loc>/deploy/servicerole/</loc>
     <lastmod>2018-09-18T17:40:09-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/kubeflow/jupyter/</loc>
-    <lastmod>2019-08-26T00:00:00-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_istio/install/</loc>
-    <lastmod>2019-03-20T13:36:55+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/advanced-networking/secondary_cidr/configure-cni/</loc>
-    <lastmod>2019-02-13T01:12:49-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/batch/install/</loc>
-    <lastmod>2018-11-18T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/irsa/iam-role-for-sa-1/</loc>
-    <lastmod>2018-11-13T16:36:24+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/port_to_app_mesh/</loc>
-    <lastmod>2018-11-13T16:32:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/intro_to_rbac/map_iam_user_to_k8s_user/</loc>
-    <lastmod>2018-10-03T10:14:46-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/introduction/basics/what_is_k8s/</loc>
-    <lastmod>2018-10-03T10:14:46-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/deploy/deployfrontend/</loc>
-    <lastmod>2018-09-18T17:40:09-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/spotworkers/preferspot/</loc>
     <lastmod>2018-09-18T17:40:09-05:00</lastmod>
   </url>
   
@@ -545,56 +105,13 @@
   </url>
   
   <url>
-    <loc>/servicemesh_with_appmesh/create_app_mesh_components/about_sidecar/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/dashboard/connect/</loc>
     <lastmod>2018-08-07T08:30:11-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/scaling/deploy_ca/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/logging/deploy/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/helm_root/helm_micro/deploy/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/jenkins/loggingin/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/create_the_k8s_app/set_perms/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/statefulset/testfailure/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/weave_flux/deploymenthelm/</loc>
-  </url>
-  
-  <url>
     <loc>/dashboard/</loc>
     <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/network-policies/tigera/install/</loc>
   </url>
   
   <url>
@@ -607,178 +124,8 @@
   </url>
   
   <url>
-    <loc>/helm_root/</loc>
-  </url>
-  
-  <url>
-    <loc>/statefulset/testscaling/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/weave_flux/cleanup/</loc>
-  </url>
-  
-  <url>
-    <loc>/kubeflow/training/</loc>
-    <lastmod>2019-08-27T00:00:00-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/advanced-networking/secondary_cidr/eniconfig_crd/</loc>
-    <lastmod>2019-03-02T12:47:43-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/batch/deploy/</loc>
-    <lastmod>2018-11-18T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_istio/deploy/</loc>
-    <lastmod>2018-11-13T16:37:17+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/irsa/iam-role-for-sa-2/</loc>
-    <lastmod>2018-11-13T16:36:24+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/cleanup/</loc>
-    <lastmod>2018-11-13T16:32:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/introduction/basics/concepts_nodes/</loc>
-    <lastmod>2018-10-03T10:15:55-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/intro_to_rbac/test_rbac_user_without_roles/</loc>
-    <lastmod>2018-10-03T10:14:46-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/deploy/viewservices/</loc>
     <lastmod>2018-09-18T17:40:09-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/statefulset/cleanup/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/logging/configurecwl/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/port_to_app_mesh/create_the_mesh/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/create_app_mesh_components/create_injector_controller/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/scaling/test_ca/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/create_the_k8s_app/test_worker_perms/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/helm_root/helm_micro/service/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/healthchecks/</loc>
-  </url>
-  
-  <url>
-    <loc>/scaling/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/codepipeline/</loc>
-  </url>
-  
-  <url>
-    <loc>/spotworkers/</loc>
-    <lastmod>2018-08-07T11:05:19-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/jenkins/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/x-ray/</loc>
-  </url>
-  
-  <url>
-    <loc>/batch/</loc>
-    <lastmod>2018-11-18T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/irsa/</loc>
-    <lastmod>2018-11-13T16:32:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/weave_flux/</loc>
-    <lastmod>2018-10-14T19:56:14-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/kubeflow/</loc>
-    <lastmod>2019-08-22T00:00:00-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/kubeflow/inference/</loc>
-    <lastmod>2019-08-27T00:00:00-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/advanced-networking/secondary_cidr/test_networking/</loc>
-    <lastmod>2019-03-02T15:18:32-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/batch/artifact/</loc>
-    <lastmod>2018-11-18T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_istio/routing/</loc>
-    <lastmod>2018-11-13T21:49:32+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/irsa/deploy/</loc>
-    <lastmod>2018-11-13T16:36:24+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/introduction/basics/concepts_objects/</loc>
-    <lastmod>2018-10-03T10:15:55-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/intro_to_rbac/create_role_and_binding/</loc>
-    <lastmod>2018-10-03T10:14:46-07:00</lastmod>
   </url>
   
   <url>
@@ -787,118 +134,7 @@
   </url>
   
   <url>
-    <loc>/servicemesh_with_appmesh/create_the_k8s_app/about_the_k8s_app/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/logging/cleanup/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/scaling/cleanup/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/port_to_app_mesh/create_the_virtual_nodes/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/create_app_mesh_components/set_injector_criteria/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/helm_root/helm_micro/rolling_back/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/spotworkers/cleanup/</loc>
-  </url>
-  
-  <url>
     <loc>/cleanup/workspace/</loc>
-  </url>
-  
-  <url>
-    <loc>/network-policies/</loc>
-  </url>
-  
-  <url>
-    <loc>/network-policies/tigera/tsce-feature-intro/</loc>
-  </url>
-  
-  <url>
-    <loc>/logging/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/monitoring/</loc>
-    <lastmod>2018-10-14T09:27:46-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_istio/</loc>
-    <lastmod>2018-11-13T16:32:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/assigning_pods/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/advanced-networking/</loc>
-  </url>
-  
-  <url>
-    <loc>/exposing_service/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/statefulset/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/irsa/cleanup/</loc>
-    <lastmod>2019-03-20T13:59:44+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/advanced-networking/secondary_cidr/cleanup/</loc>
-    <lastmod>2019-03-02T16:47:38-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/batch/workflow-simple/</loc>
-    <lastmod>2018-11-18T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_istio/visualize/</loc>
-    <lastmod>2018-11-13T22:42:01+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/introduction/basics/concepts_objects_details_1/</loc>
-    <lastmod>2018-10-03T10:15:55-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/intro_to_rbac/verify_user_role_binding/</loc>
-    <lastmod>2018-10-03T10:14:46-07:00</lastmod>
   </url>
   
   <url>
@@ -907,82 +143,7 @@
   </url>
   
   <url>
-    <loc>/servicemesh_with_appmesh/create_app_mesh_components/adding_crds/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/helm_root/helm_micro/cleanup/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/jenkins/cleanup/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/create_the_k8s_app/create_the_app/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/port_to_app_mesh/create_the_virtual_services/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/custom_resource_definition/</loc>
-    <lastmod>2019-04-09T00:00:00-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/helm_root/helm_intro/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/conclusion/survey/</loc>
-  </url>
-  
-  <url>
-    <loc>/network-policies/calico/stars_policy_demo/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_istio/cleanup/</loc>
-    <lastmod>2019-03-20T13:59:44+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/batch/workflow-advanced/</loc>
-    <lastmod>2018-11-18T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/introduction/basics/concepts_objects_details_2/</loc>
-    <lastmod>2018-10-03T10:15:55-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/intro_to_rbac/cleanup/</loc>
-    <lastmod>2018-10-03T10:14:46-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/port_to_app_mesh/triggering_injector_first_time/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/create_app_mesh_components/conclusion/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/create_the_k8s_app/test_the_app/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
   </url>
   
   <url>
@@ -991,156 +152,12 @@
   </url>
   
   <url>
-    <loc>/helm_root/helm_nginx/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/batch/dashboard/</loc>
-    <lastmod>2018-11-18T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/introduction/architecture/</loc>
-    <lastmod>2018-10-03T10:17:52-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/create_the_k8s_app/conclusion/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/port_to_app_mesh/testing_app_mesh_v1/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/helm_root/helm_micro/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/batch/cleanup/</loc>
-    <lastmod>2018-11-18T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/introduction/architecture/architecture_control_and_data_overview/</loc>
-    <lastmod>2018-10-03T10:18:20-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/introduction/eks/</loc>
-    <lastmod>2018-10-03T10:14:32-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/deploy/cleanup/</loc>
     <lastmod>2018-08-07T13:37:53-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/servicemesh_with_appmesh/port_to_app_mesh/canary_testing/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/conclusion/</loc>
-  </url>
-  
-  <url>
-    <loc>/introduction/architecture/architecture_control/</loc>
-    <lastmod>2018-10-03T10:18:27-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/servicemesh_with_appmesh/port_to_app_mesh/testing_the_v2/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/helm_root/helm_nginx/updatecharts/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/network-policies/tigera/tsce-sg-integration/</loc>
-  </url>
-  
-  <url>
-    <loc>/introduction/architecture/architecture_worker/</loc>
-    <lastmod>2018-10-03T10:18:27-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/introduction/architecture/cluster_setup_options/</loc>
-    <lastmod>2018-10-03T10:21:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/introduction/eks/eks_customers/</loc>
-    <lastmod>2018-10-03T10:23:24-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/introduction/eks/eks_control_plane/</loc>
-    <lastmod>2018-10-03T10:23:24-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/introduction/eks/eks_high_architecture/</loc>
-    <lastmod>2018-10-03T10:23:24-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/introduction/eks/eks_high_level/</loc>
-    <lastmod>2018-10-03T10:23:24-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/network-policies/tigera/tsce-cw-integration/</loc>
-  </url>
-  
-  <url>
-    <loc>/introduction/eks/stay_tuned/</loc>
-    <lastmod>2018-10-03T10:23:24-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/helm_root/helm_nginx/searchchart/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/network-policies/tigera/init-policy/</loc>
-  </url>
-  
-  <url>
-    <loc>/network-policies/tigera/backend-policy/</loc>
-  </url>
-  
-  <url>
-    <loc>/helm_root/helm_nginx/addbitnamirepo/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/helm_root/helm_nginx/installnginx/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/helm_root/helm_nginx/cleaningup/</loc>
-    <lastmod>2018-08-07T08:30:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tabs-example/</loc>
-  </url>
-  
-  <url>
-    <loc>/weave_flux/app.files/</loc>
   </url>
   
   <url>
@@ -1153,31 +170,7 @@
   </url>
   
   <url>
-    <loc>/tabs-example/tabs/</loc>
-    <lastmod>2018-08-07T13:34:24-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tabs-example/tabs/eks/</loc>
-  </url>
-  
-  <url>
-    <loc>/tabs-example/tabs/launcheks/</loc>
-  </url>
-  
-  <url>
     <loc>/example_cf_templates/</loc>
-  </url>
-  
-  <url>
-    <loc>/intro_to_rbac/</loc>
-    <lastmod>2018-10-03T10:14:46-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/introduction/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
