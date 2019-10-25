@@ -32,7 +32,27 @@
   </url>
   
   <url>
+    <loc>/codepipeline/role/</loc>
+  </url>
+  
+  <url>
     <loc>/prerequisites/</loc>
+  </url>
+  
+  <url>
+    <loc>/codepipeline/configmap/</loc>
+  </url>
+  
+  <url>
+    <loc>/codepipeline/forksample/</loc>
+  </url>
+  
+  <url>
+    <loc>/codepipeline/githubcredentials/</loc>
+  </url>
+  
+  <url>
+    <loc>/codepipeline/codepipeline/</loc>
   </url>
   
   <url>
@@ -41,6 +61,14 @@
   
   <url>
     <loc>/prerequisites/k8stools/</loc>
+  </url>
+  
+  <url>
+    <loc>/codepipeline/change/</loc>
+  </url>
+  
+  <url>
+    <loc>/codepipeline/cleanup/</loc>
   </url>
   
   <url>
@@ -126,6 +154,10 @@
   <url>
     <loc>/deploy/viewservices/</loc>
     <lastmod>2018-09-18T17:40:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/codepipeline/</loc>
   </url>
   
   <url>
