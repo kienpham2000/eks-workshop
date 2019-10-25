@@ -1,7 +1,7 @@
 ---
 title: "EKS Cluster Creation Workflow"
 date: 2018-10-03T10:23:24-07:00
-draft: false
+draft: true
 weight: 130
 ---
 

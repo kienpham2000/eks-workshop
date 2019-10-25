@@ -1,7 +1,7 @@
 ---
 title: "Amazon EKS"
 date: 2018-10-03T10:14:32-07:00
-draft: false
+draft: true
 weight: 90
 ---
 

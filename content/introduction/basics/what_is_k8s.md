@@ -1,7 +1,7 @@
 ---
 title: "What is Kubernetes"
 date: 2018-10-03T10:14:46-07:00
-draft: false
+draft: true
 weight: 30
 ---
 
@@ -11,4 +11,4 @@ weight: 30
 * Utilizes declarative configuration and automation
 * Draws upon a large ecosystem of tools, services, support
 
-More information on what Kubernetes is all about can be found on the [official Kubernetes website](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/). 
+More information on what Kubernetes is all about can be found on the [official Kubernetes website](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/).

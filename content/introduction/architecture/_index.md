@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes Architecture"
 date: 2018-10-03T10:17:52-07:00
-draft: false
+draft: true
 weight: 80
 ---
 
