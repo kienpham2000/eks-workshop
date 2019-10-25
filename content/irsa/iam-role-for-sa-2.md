@@ -26,4 +26,4 @@ kubectl get sa
 kubectl describe sa iam-test
 ```
 
-> Name:                iam-test<br>Namespace:           default<br>Labels:              <none><br><span style="color:orange">Annotations:         eks.amazonaws.com/role-arn: arn:aws:iam::14xxxxxxxx84:role/eksctl-eksworkshop-eksctl-addon-iamserviceac-Role1-1PJ5Q3H39Z5M9</span><br>Image pull secrets:  <none><br>Mountable secrets:   iam-test-token-5n9cb<br>Tokens:              iam-test-token-5n9cb<br>Events:              <none>
+> Name:                iam-test<br>Namespace:           default<br>Labels:              <none><br><span style="color:orange">Annotations:         eks.amazonaws.com/role-arn: arn:aws:iam::14xxxxxxxx84:role/eksctl-eksworkshop-eksctl-yourusername-addon-iamserviceac-Role1-1PJ5Q3H39Z5M9</span><br>Image pull secrets:  <none><br>Mountable secrets:   iam-test-token-5n9cb<br>Tokens:              iam-test-token-5n9cb<br>Events:              <none>

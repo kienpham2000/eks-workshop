@@ -18,21 +18,21 @@
     <title>Launch EKS :: Amazon EKS Workshop</title>
 
     
-    <link href="../../css/nucleus.css?1571983600" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1571983600" rel="stylesheet">
-    <link href="../../css/hybrid.css?1571983600" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1571983600" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1571983600" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1571983600" rel="stylesheet">
-    <link href="../../css/theme.css?1571983600" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1571983600" rel="stylesheet">
-    <link href="../../css/jquery-ui.min.css?1571983600" rel="stylesheet">
+    <link href="../../css/nucleus.css?1571985497" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1571985497" rel="stylesheet">
+    <link href="../../css/hybrid.css?1571985497" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1571985497" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1571985497" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1571985497" rel="stylesheet">
+    <link href="../../css/theme.css?1571985497" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1571985497" rel="stylesheet">
+    <link href="../../css/jquery-ui.min.css?1571985497" rel="stylesheet">
     
-      <link href="../../css/theme-mine.css?1571983600" rel="stylesheet">
+      <link href="../../css/theme-mine.css?1571985497" rel="stylesheet">
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1571983600"></script>
-    <script src="../../js/jquery-ui-1.12.1.min.js?1571983600"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1571985497"></script>
+    <script src="../../js/jquery-ui-1.12.1.min.js?1571985497"></script>
 
 
     <style type="text/css">
@@ -64,14 +64,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1571983600"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1571983600"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1571985497"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1571985497"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1571983600"></script>
+<script type="text/javascript" src="../../js/search.js?1571985497"></script>
 
     
   </div>
@@ -196,26 +196,6 @@
   class="dd-item ">
   <a href="../../prerequisites/workspaceiam/">
     Update IAM settings for your Workspace
-    
-  </a>
-</li>
-
-
-
-
-    
-    
-    
-    
-
-
-
-
-
-<li data-nav-id="/prerequisites/aws_event/portal/" title="AWS Workshop Portal"
-  class="dd-item ">
-  <a href="../../prerequisites/aws_event/portal/">
-    AWS Workshop Portal
     
   </a>
 </li>
@@ -5570,10 +5550,7 @@
 <ul>
 <li><a href="#challenge">Challenge:</a></li>
 </ul></li>
-<li><a href="#create-an-eks-cluster">Create an EKS cluster</a>
-<ul>
-<li><a href="#if-you-re-planning-to-run-machine-learning-workloads-in-the-kubeflow-chapter-then-use-the-following-command-instead-note-this-launches-large-p3-instances">If you&rsquo;re planning to run Machine Learning workloads in the Kubeflow chapter, then use the following command instead (note: this launches large p3 instances)</a></li>
-</ul></li>
+<li><a href="#create-an-eks-cluster">Create an EKS cluster</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5618,13 +5595,13 @@
     	</span>
     </div>
     <div class="expand-content" style="display: none;">
-        <p>Run <code>aws sts get-caller-identity</code> and validate that your <em>Arn</em> contains <code>eksworkshop-admin</code> or <code>TeamRole</code>
+        <p>Run <code>aws sts get-caller-identity</code> and validate that your <em>Arn</em> contains <code>eksworkshop-admin-yourusername</code> or <code>TeamRole</code>
 (or the role created when starting the workshop) and an Instance Id.</p>
 
 <pre><code class="language-output">{
     &quot;Account&quot;: &quot;123456789012&quot;,
     &quot;UserId&quot;: &quot;AROA1SAMPLEAWSIAMROLE:i-01234567890abcdef&quot;,
-    &quot;Arn&quot;: &quot;arn:aws:sts::123456789012:assumed-role/eksworkshop-admin/i-01234567890abcdef&quot;
+    &quot;Arn&quot;: &quot;arn:aws:sts::123456789012:assumed-role/eksworkshop-admin-yourusername/i-01234567890abcdef&quot;
 }
 or
 {
@@ -5643,16 +5620,7 @@ or
 
 <h3 id="create-an-eks-cluster">Create an EKS cluster</h3>
 
-<pre><code>eksctl create cluster --name=eksworkshop-eksctl --nodes=3 --alb-ingress-access --region=${AWS_REGION}
-</code></pre>
-
-<h4 id="if-you-re-planning-to-run-machine-learning-workloads-in-the-kubeflow-chapter-then-use-the-following-command-instead-note-this-launches-large-p3-instances">If you&rsquo;re planning to run Machine Learning workloads in the Kubeflow chapter, then use the following command instead (note: this launches large p3 instances)</h4>
-
-<pre><code>curl -OL https://eksworkshop.com/eksctl/launcheks.files/eksworkshop-kubeflow.yml.template
-export AWS_AZS=$(aws ec2 describe-availability-zones --region=${AWS_REGION} --query 'AvailabilityZones[*].ZoneName' --output json | tr '\n' ' ' | sed 's/[][]//g')
-export AWS_AZ=$(aws ec2 describe-availability-zones --region=${AWS_REGION} --query 'AvailabilityZones[0].ZoneName' --output json)
-envsubst &lt;eksworkshop-kubeflow.yml.template &gt;eksworkshop-kubeflow.yml
-eksctl create cluster -f eksworkshop-kubeflow.yml
+<pre><code>eksctl create cluster --name=eksworkshop-eksctl-yourusername --nodes=3 --alb-ingress-access --region=${AWS_REGION}
 </code></pre>
 
 
@@ -5707,22 +5675,6 @@ eksctl create cluster -f eksworkshop-kubeflow.yml
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -9587,19 +9539,19 @@ eksctl create cluster -f eksworkshop-kubeflow.yml
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1571983600"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1571983600"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1571983600"></script>
-    <script src="../../js/jquery.sticky.js?1571983600"></script>
-    <script src="../../js/featherlight.min.js?1571983600"></script>
-    <script src="../../js/highlight.pack.js?1571983600"></script>
+    <script src="../../js/clipboard.min.js?1571985497"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1571985497"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1571985497"></script>
+    <script src="../../js/jquery.sticky.js?1571985497"></script>
+    <script src="../../js/featherlight.min.js?1571985497"></script>
+    <script src="../../js/highlight.pack.js?1571985497"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1571983600"></script>
-    <script src="../../js/learn.js?1571983600"></script>
-    <script src="../../js/hugo-learn.js?1571983600"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1571985497"></script>
+    <script src="../../js/learn.js?1571985497"></script>
+    <script src="../../js/hugo-learn.js?1571985497"></script>
 
-    <link href="../../mermaid/mermaid.css?1571983600" type="text/css" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.min.js?1571983600"></script>
+    <link href="../../mermaid/mermaid.css?1571985497" type="text/css" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.min.js?1571985497"></script>
     <script>
 	var config = {
         startOnLoad:true,

@@ -18,21 +18,21 @@
     <title>Prerequisites :: Amazon EKS Workshop</title>
 
     
-    <link href="../../../css/nucleus.css?1571983599" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1571983599" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1571983599" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1571983599" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1571983599" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1571983599" rel="stylesheet">
-    <link href="../../../css/theme.css?1571983599" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1571983599" rel="stylesheet">
-    <link href="../../../css/jquery-ui.min.css?1571983599" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1571985497" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1571985497" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1571985497" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1571985497" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1571985497" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1571985497" rel="stylesheet">
+    <link href="../../../css/theme.css?1571985497" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1571985497" rel="stylesheet">
+    <link href="../../../css/jquery-ui.min.css?1571985497" rel="stylesheet">
     
-      <link href="../../../css/theme-mine.css?1571983599" rel="stylesheet">
+      <link href="../../../css/theme-mine.css?1571985497" rel="stylesheet">
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1571983599"></script>
-    <script src="../../../js/jquery-ui-1.12.1.min.js?1571983599"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1571985497"></script>
+    <script src="../../../js/jquery-ui-1.12.1.min.js?1571985497"></script>
 
 
     <style type="text/css">
@@ -64,14 +64,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1571983599"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1571983599"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1571985497"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1571985497"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1571983599"></script>
+<script type="text/javascript" src="../../../js/search.js?1571985497"></script>
 
     
   </div>
@@ -196,26 +196,6 @@
   class="dd-item ">
   <a href="../../../prerequisites/workspaceiam/">
     Update IAM settings for your Workspace
-    
-  </a>
-</li>
-
-
-
-
-    
-    
-    
-    
-
-
-
-
-
-<li data-nav-id="/prerequisites/aws_event/portal/" title="AWS Workshop Portal"
-  class="dd-item ">
-  <a href="../../../prerequisites/aws_event/portal/">
-    AWS Workshop Portal
     
   </a>
 </li>
@@ -5614,15 +5594,15 @@ aws ec2 associate-vpc-cidr-block --vpc-id $VPC_ID --cidr-block 100.64.0.0/16
 
 <p>Next step is to create subnets. Before we do this step, let&rsquo;s check how many subnets we are consuming. You can run this command to see EC2 instance and AZ details</p>
 
-<pre><code>aws ec2 describe-instances --filters &quot;Name=tag:Name,Values=eksworkshop*&quot; --query 'Reservations[*].Instances[*].[PrivateDnsName,Tags[?Key==`Name`].Value|[0],Placement.AvailabilityZone,PrivateIpAddress,PublicIpAddress]' --output table   
+<pre><code>aws ec2 describe-instances --filters &quot;Name=tag:Name,Values=eksworkshop*&quot; --query 'Reservations[*].Instances[*].[PrivateDnsName,Tags[?Key==`Name`].Value|[0],Placement.AvailabilityZone,PrivateIpAddress,PublicIpAddress]' --output table
 </code></pre>
 
 <pre><code>------------------------------------------------------------------------------------------------------------------------------------------
 |                                                            DescribeInstances                                                           |
 +-----------------------------------------------+---------------------------------------+-------------+-----------------+----------------+
-|  ip-192-168-9-228.us-east-2.compute.internal  |  eksworkshop-eksctl-ng-475d4bc8-Node  |  us-east-2c |  192.168.9.228  |  18.191.57.131 |
-|  ip-192-168-71-211.us-east-2.compute.internal |  eksworkshop-eksctl-ng-475d4bc8-Node  |  us-east-2a |  192.168.71.211 |  18.221.77.249 |
-|  ip-192-168-33-135.us-east-2.compute.internal |  eksworkshop-eksctl-ng-475d4bc8-Node  |  us-east-2b |  192.168.33.135 |  13.59.167.90  |
+|  ip-192-168-9-228.us-east-2.compute.internal  |  eksworkshop-eksctl-yourusername-ng-475d4bc8-Node  |  us-east-2c |  192.168.9.228  |  18.191.57.131 |
+|  ip-192-168-71-211.us-east-2.compute.internal |  eksworkshop-eksctl-yourusername-ng-475d4bc8-Node  |  us-east-2a |  192.168.71.211 |  18.221.77.249 |
+|  ip-192-168-33-135.us-east-2.compute.internal |  eksworkshop-eksctl-yourusername-ng-475d4bc8-Node  |  us-east-2b |  192.168.33.135 |  13.59.167.90  |
 +-----------------------------------------------+---------------------------------------+-------------+-----------------+----------------+
 </code></pre>
 
@@ -5645,23 +5625,23 @@ CGNAT_SNET3=$(aws ec2 create-subnet --cidr-block 100.64.64.0/19 --vpc-id $VPC_ID
 
 <pre><code>TAGS    aws:cloudformation:logical-id   SubnetPublicUSEAST2C
 TAGS    kubernetes.io/role/elb  1
-TAGS    eksctl.cluster.k8s.io/v1alpha1/cluster-name     eksworkshop-eksctl
-TAGS    Name    eksctl-eksworkshop-eksctl-cluster/SubnetPublicUSEAST2C
-TAGS    aws:cloudformation:stack-name   eksctl-eksworkshop-eksctl-cluster
-TAGS    kubernetes.io/cluster/eksworkshop-eksctl        shared
-TAGS    aws:cloudformation:stack-id     arn:aws:cloudformation:us-east-2:012345678901:stack/eksctl-eksworkshop-eksctl-cluster/8da51fc0-2b5e-11e9-b535-022c6f51bf82
+TAGS    eksctl.cluster.k8s.io/v1alpha1/cluster-name     eksworkshop-eksctl-yourusername
+TAGS    Name    eksctl-eksworkshop-eksctl-yourusername-cluster/SubnetPublicUSEAST2C
+TAGS    aws:cloudformation:stack-name   eksctl-eksworkshop-eksctl-yourusername-cluster
+TAGS    kubernetes.io/cluster/eksworkshop-eksctl-yourusername        shared
+TAGS    aws:cloudformation:stack-id     arn:aws:cloudformation:us-east-2:012345678901:stack/eksctl-eksworkshop-eksctl-yourusername-cluster/8da51fc0-2b5e-11e9-b535-022c6f51bf82
 </code></pre>
 
 <p>Here are the commands to add tags to both the subnets</p>
 
-<pre><code>aws ec2 create-tags --resources $CGNAT_SNET1 --tags Key=eksctl.cluster.k8s.io/v1alpha1/cluster-name,Value=eksworkshop-eksctl
-aws ec2 create-tags --resources $CGNAT_SNET1 --tags Key=kubernetes.io/cluster/eksworkshop-eksctl,Value=shared
+<pre><code>aws ec2 create-tags --resources $CGNAT_SNET1 --tags Key=eksctl.cluster.k8s.io/v1alpha1/cluster-name,Value=eksworkshop-eksctl-yourusername
+aws ec2 create-tags --resources $CGNAT_SNET1 --tags Key=kubernetes.io/cluster/eksworkshop-eksctl-yourusername,Value=shared
 aws ec2 create-tags --resources $CGNAT_SNET1 --tags Key=kubernetes.io/role/elb,Value=1
-aws ec2 create-tags --resources $CGNAT_SNET2 --tags Key=eksctl.cluster.k8s.io/v1alpha1/cluster-name,Value=eksworkshop-eksctl
-aws ec2 create-tags --resources $CGNAT_SNET2 --tags Key=kubernetes.io/cluster/eksworkshop-eksctl,Value=shared
+aws ec2 create-tags --resources $CGNAT_SNET2 --tags Key=eksctl.cluster.k8s.io/v1alpha1/cluster-name,Value=eksworkshop-eksctl-yourusername
+aws ec2 create-tags --resources $CGNAT_SNET2 --tags Key=kubernetes.io/cluster/eksworkshop-eksctl-yourusername,Value=shared
 aws ec2 create-tags --resources $CGNAT_SNET2 --tags Key=kubernetes.io/role/elb,Value=1
-aws ec2 create-tags --resources $CGNAT_SNET3 --tags Key=eksctl.cluster.k8s.io/v1alpha1/cluster-name,Value=eksworkshop-eksctl
-aws ec2 create-tags --resources $CGNAT_SNET3 --tags Key=kubernetes.io/cluster/eksworkshop-eksctl,Value=shared
+aws ec2 create-tags --resources $CGNAT_SNET3 --tags Key=eksctl.cluster.k8s.io/v1alpha1/cluster-name,Value=eksworkshop-eksctl-yourusername
+aws ec2 create-tags --resources $CGNAT_SNET3 --tags Key=kubernetes.io/cluster/eksworkshop-eksctl-yourusername,Value=shared
 aws ec2 create-tags --resources $CGNAT_SNET3 --tags Key=kubernetes.io/role/elb,Value=1
 </code></pre>
 
@@ -5721,22 +5701,6 @@ aws ec2 associate-route-table --route-table-id $RTASSOC_ID --subnet-id $CGNAT_SN
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -9599,19 +9563,19 @@ aws ec2 associate-route-table --route-table-id $RTASSOC_ID --subnet-id $CGNAT_SN
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1571983600"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1571983600"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1571983600"></script>
-    <script src="../../../js/jquery.sticky.js?1571983600"></script>
-    <script src="../../../js/featherlight.min.js?1571983600"></script>
-    <script src="../../../js/highlight.pack.js?1571983600"></script>
+    <script src="../../../js/clipboard.min.js?1571985497"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1571985497"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1571985497"></script>
+    <script src="../../../js/jquery.sticky.js?1571985497"></script>
+    <script src="../../../js/featherlight.min.js?1571985497"></script>
+    <script src="../../../js/highlight.pack.js?1571985497"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1571983600"></script>
-    <script src="../../../js/learn.js?1571983600"></script>
-    <script src="../../../js/hugo-learn.js?1571983600"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1571985497"></script>
+    <script src="../../../js/learn.js?1571985497"></script>
+    <script src="../../../js/hugo-learn.js?1571985497"></script>
 
-    <link href="../../../mermaid/mermaid.css?1571983600" type="text/css" rel="stylesheet" />
-    <script src="../../../mermaid/mermaid.min.js?1571983600"></script>
+    <link href="../../../mermaid/mermaid.css?1571985497" type="text/css" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.min.js?1571985497"></script>
     <script>
 	var config = {
         startOnLoad:true,

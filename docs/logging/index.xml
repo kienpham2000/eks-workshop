@@ -48,7 +48,7 @@ Note that this cluster has an open access policy which will need to be locked do
       
       <guid>/logging/configurecwl/</guid>
       <description>Configure CloudWatch Logs Subscription CloudWatch Logs can be delivered to other services such as Amazon Elasticsearch for custom processing. This can be achieved by subscribing to a real-time feed of log events. A subscription filter defines the filter pattern to use for filtering which log events gets delivered to Elasticsearch, as well as information about where to send matching log events to.
-In this section, we’ll subscribe to the CloudWatch log events from the fluent-cloudwatch stream from the eks/eksworkshop-eksctl log group.</description>
+In this section, we’ll subscribe to the CloudWatch log events from the fluent-cloudwatch stream from the eks/eksworkshop-eksctl-yourusername log group.</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@ In this section, we’ll subscribe to the CloudWatch log events from the fluent-
       <pubDate>Tue, 07 Aug 2018 08:30:11 -0700</pubDate>
       
       <guid>/logging/cleanup/</guid>
-      <description>cd ~/environment kubectl delete -f ~/environment/fluentd/fluentd.yml rm -rf ~/environment/fluentd/ aws es delete-elasticsearch-domain --domain-name kubernetes-logs aws logs delete-log-group --log-group-name /eks/eksworkshop-eksctl/containers rm -rf ~/environment/iam_policy/  </description>
+      <description>cd ~/environment kubectl delete -f ~/environment/fluentd/fluentd.yml rm -rf ~/environment/fluentd/ aws es delete-elasticsearch-domain --domain-name kubernetes-logs aws logs delete-log-group --log-group-name /eks/eksworkshop-eksctl-yourusername/containers rm -rf ~/environment/iam_policy/  </description>
     </item>
     
   </channel>

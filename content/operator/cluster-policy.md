@@ -10,7 +10,7 @@ instance policy. Being pre-release this requires `AdministratorAccess`. This
 will be changed overtime to reflect it's true needs.
 
 ```
-INSTANCE_ROLE_ARN=$(aws cloudformation describe-stacks --stack-name eksctl-eksworkshop-eksctl-nodegroup-0 --output text --query Stacks[0].Outputs[0].OutputValue | sed -e 's/.*\///g')
+INSTANCE_ROLE_ARN=$(aws cloudformation describe-stacks --stack-name eksctl-eksworkshop-eksctl-yourusername-nodegroup-0 --output text --query Stacks[0].Outputs[0].OutputValue | sed -e 's/.*\///g')
 
 aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/AdministratorAccess --role-name ${INSTANCE_ROLE_ARN}
 ```

@@ -21,15 +21,15 @@ aws ec2 associate-vpc-cidr-block --vpc-id $VPC_ID --cidr-block 100.64.0.0/16
 Next step is to create subnets. Before we do this step, let's check how many subnets we are consuming. You can run this command to see EC2 instance and AZ details
 
 ```
-aws ec2 describe-instances --filters "Name=tag:Name,Values=eksworkshop*" --query 'Reservations[*].Instances[*].[PrivateDnsName,Tags[?Key==`Name`].Value|[0],Placement.AvailabilityZone,PrivateIpAddress,PublicIpAddress]' --output table   
+aws ec2 describe-instances --filters "Name=tag:Name,Values=eksworkshop*" --query 'Reservations[*].Instances[*].[PrivateDnsName,Tags[?Key==`Name`].Value|[0],Placement.AvailabilityZone,PrivateIpAddress,PublicIpAddress]' --output table
 ```
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------
 |                                                            DescribeInstances                                                           |
 +-----------------------------------------------+---------------------------------------+-------------+-----------------+----------------+
-|  ip-192-168-9-228.us-east-2.compute.internal  |  eksworkshop-eksctl-ng-475d4bc8-Node  |  us-east-2c |  192.168.9.228  |  18.191.57.131 |
-|  ip-192-168-71-211.us-east-2.compute.internal |  eksworkshop-eksctl-ng-475d4bc8-Node  |  us-east-2a |  192.168.71.211 |  18.221.77.249 |
-|  ip-192-168-33-135.us-east-2.compute.internal |  eksworkshop-eksctl-ng-475d4bc8-Node  |  us-east-2b |  192.168.33.135 |  13.59.167.90  |
+|  ip-192-168-9-228.us-east-2.compute.internal  |  eksworkshop-eksctl-yourusername-ng-475d4bc8-Node  |  us-east-2c |  192.168.9.228  |  18.191.57.131 |
+|  ip-192-168-71-211.us-east-2.compute.internal |  eksworkshop-eksctl-yourusername-ng-475d4bc8-Node  |  us-east-2a |  192.168.71.211 |  18.221.77.249 |
+|  ip-192-168-33-135.us-east-2.compute.internal |  eksworkshop-eksctl-yourusername-ng-475d4bc8-Node  |  us-east-2b |  192.168.33.135 |  13.59.167.90  |
 +-----------------------------------------------+---------------------------------------+-------------+-----------------+----------------+
 ```
 
@@ -50,22 +50,22 @@ Output shows similar to this
 ```
 TAGS    aws:cloudformation:logical-id   SubnetPublicUSEAST2C
 TAGS    kubernetes.io/role/elb  1
-TAGS    eksctl.cluster.k8s.io/v1alpha1/cluster-name     eksworkshop-eksctl
-TAGS    Name    eksctl-eksworkshop-eksctl-cluster/SubnetPublicUSEAST2C
-TAGS    aws:cloudformation:stack-name   eksctl-eksworkshop-eksctl-cluster
-TAGS    kubernetes.io/cluster/eksworkshop-eksctl        shared
-TAGS    aws:cloudformation:stack-id     arn:aws:cloudformation:us-east-2:012345678901:stack/eksctl-eksworkshop-eksctl-cluster/8da51fc0-2b5e-11e9-b535-022c6f51bf82
+TAGS    eksctl.cluster.k8s.io/v1alpha1/cluster-name     eksworkshop-eksctl-yourusername
+TAGS    Name    eksctl-eksworkshop-eksctl-yourusername-cluster/SubnetPublicUSEAST2C
+TAGS    aws:cloudformation:stack-name   eksctl-eksworkshop-eksctl-yourusername-cluster
+TAGS    kubernetes.io/cluster/eksworkshop-eksctl-yourusername        shared
+TAGS    aws:cloudformation:stack-id     arn:aws:cloudformation:us-east-2:012345678901:stack/eksctl-eksworkshop-eksctl-yourusername-cluster/8da51fc0-2b5e-11e9-b535-022c6f51bf82
 ```
 Here are the commands to add tags to both the subnets
 ```
-aws ec2 create-tags --resources $CGNAT_SNET1 --tags Key=eksctl.cluster.k8s.io/v1alpha1/cluster-name,Value=eksworkshop-eksctl
-aws ec2 create-tags --resources $CGNAT_SNET1 --tags Key=kubernetes.io/cluster/eksworkshop-eksctl,Value=shared
+aws ec2 create-tags --resources $CGNAT_SNET1 --tags Key=eksctl.cluster.k8s.io/v1alpha1/cluster-name,Value=eksworkshop-eksctl-yourusername
+aws ec2 create-tags --resources $CGNAT_SNET1 --tags Key=kubernetes.io/cluster/eksworkshop-eksctl-yourusername,Value=shared
 aws ec2 create-tags --resources $CGNAT_SNET1 --tags Key=kubernetes.io/role/elb,Value=1
-aws ec2 create-tags --resources $CGNAT_SNET2 --tags Key=eksctl.cluster.k8s.io/v1alpha1/cluster-name,Value=eksworkshop-eksctl
-aws ec2 create-tags --resources $CGNAT_SNET2 --tags Key=kubernetes.io/cluster/eksworkshop-eksctl,Value=shared
+aws ec2 create-tags --resources $CGNAT_SNET2 --tags Key=eksctl.cluster.k8s.io/v1alpha1/cluster-name,Value=eksworkshop-eksctl-yourusername
+aws ec2 create-tags --resources $CGNAT_SNET2 --tags Key=kubernetes.io/cluster/eksworkshop-eksctl-yourusername,Value=shared
 aws ec2 create-tags --resources $CGNAT_SNET2 --tags Key=kubernetes.io/role/elb,Value=1
-aws ec2 create-tags --resources $CGNAT_SNET3 --tags Key=eksctl.cluster.k8s.io/v1alpha1/cluster-name,Value=eksworkshop-eksctl
-aws ec2 create-tags --resources $CGNAT_SNET3 --tags Key=kubernetes.io/cluster/eksworkshop-eksctl,Value=shared
+aws ec2 create-tags --resources $CGNAT_SNET3 --tags Key=eksctl.cluster.k8s.io/v1alpha1/cluster-name,Value=eksworkshop-eksctl-yourusername
+aws ec2 create-tags --resources $CGNAT_SNET3 --tags Key=kubernetes.io/cluster/eksworkshop-eksctl-yourusername,Value=shared
 aws ec2 create-tags --resources $CGNAT_SNET3 --tags Key=kubernetes.io/role/elb,Value=1
 ```
 As next step, we need to associate three new subnets into a route table. Again for simplicity, we chose to add new subnets to the Public route table that has connectivity to Internet Gateway

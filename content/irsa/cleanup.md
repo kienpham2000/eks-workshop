@@ -16,5 +16,5 @@ kubectl delete -f iam-pod.yaml
 To remove IAM role and Service Account stack from cloudformation
 
 ```
-eksctl delete iamserviceaccount --name iam-test --namespace default --cluster eksworkshop-eksctl
+eksctl delete iamserviceaccount --name iam-test --namespace default --cluster eksworkshop-eksctl-yourusername
 ```

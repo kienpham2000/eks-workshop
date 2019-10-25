@@ -18,21 +18,21 @@
     <title>Create CRDs :: Amazon EKS Workshop</title>
 
     
-    <link href="../../../css/nucleus.css?1571983600" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1571983600" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1571983600" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1571983600" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1571983600" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1571983600" rel="stylesheet">
-    <link href="../../../css/theme.css?1571983600" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1571983600" rel="stylesheet">
-    <link href="../../../css/jquery-ui.min.css?1571983600" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1571985498" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1571985498" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1571985498" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1571985498" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1571985498" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1571985498" rel="stylesheet">
+    <link href="../../../css/theme.css?1571985498" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1571985498" rel="stylesheet">
+    <link href="../../../css/jquery-ui.min.css?1571985498" rel="stylesheet">
     
-      <link href="../../../css/theme-mine.css?1571983600" rel="stylesheet">
+      <link href="../../../css/theme-mine.css?1571985498" rel="stylesheet">
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1571983600"></script>
-    <script src="../../../js/jquery-ui-1.12.1.min.js?1571983600"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1571985498"></script>
+    <script src="../../../js/jquery-ui-1.12.1.min.js?1571985498"></script>
 
 
     <style type="text/css">
@@ -64,14 +64,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1571983600"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1571983600"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1571985498"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1571985498"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1571983600"></script>
+<script type="text/javascript" src="../../../js/search.js?1571985498"></script>
 
     
   </div>
@@ -196,26 +196,6 @@
   class="dd-item ">
   <a href="../../../prerequisites/workspaceiam/">
     Update IAM settings for your Workspace
-    
-  </a>
-</li>
-
-
-
-
-    
-    
-    
-    
-
-
-
-
-
-<li data-nav-id="/prerequisites/aws_event/portal/" title="AWS Workshop Portal"
-  class="dd-item ">
-  <a href="../../../prerequisites/aws_event/portal/">
-    AWS Workshop Portal
     
   </a>
 </li>
@@ -5652,7 +5632,7 @@ for i in &quot;${INSTANCE_IDS[@]}&quot;
 do
 	echo &quot;SecurityGroup for EC2 instance $i ...&quot;
   aws ec2 describe-instances --instance-ids $INSTANCE_IDS | jq -r '.Reservations[].Instances[].SecurityGroups[].GroupId'
-done  
+done
 </code></pre>
 
 <pre><code>SecurityGroup for EC2 instance i-03ea1a083c924cd78 ...
@@ -5687,15 +5667,15 @@ spec:
 
 <p>Check the instance details using this command as you will need AZ info when you apply annotation to Worker nodes using custom network config</p>
 
-<pre><code>aws ec2 describe-instances --filters &quot;Name=tag:Name,Values=eksworkshop*&quot; --query 'Reservations[*].Instances[*].[PrivateDnsName,Tags[?Key==`Name`].Value|[0],Placement.AvailabilityZone,PrivateIpAddress,PublicIpAddress]' --output table   
+<pre><code>aws ec2 describe-instances --filters &quot;Name=tag:Name,Values=eksworkshop*&quot; --query 'Reservations[*].Instances[*].[PrivateDnsName,Tags[?Key==`Name`].Value|[0],Placement.AvailabilityZone,PrivateIpAddress,PublicIpAddress]' --output table
 </code></pre>
 
 <pre><code>------------------------------------------------------------------------------------------------------------------------------------------
 |                                                            DescribeInstances                                                           |
 +-----------------------------------------------+---------------------------------------+-------------+-----------------+----------------+
-|  ip-192-168-9-228.us-east-2.compute.internal  |  eksworkshop-eksctl-ng-475d4bc8-Node  |  us-east-2c |  192.168.9.228  |  18.191.57.131 |
-|  ip-192-168-71-211.us-east-2.compute.internal |  eksworkshop-eksctl-ng-475d4bc8-Node  |  us-east-2a |  192.168.71.211 |  18.221.77.249 |
-|  ip-192-168-33-135.us-east-2.compute.internal |  eksworkshop-eksctl-ng-475d4bc8-Node  |  us-east-2b |  192.168.33.135 |  13.59.167.90  |
+|  ip-192-168-9-228.us-east-2.compute.internal  |  eksworkshop-eksctl-yourusername-ng-475d4bc8-Node  |  us-east-2c |  192.168.9.228  |  18.191.57.131 |
+|  ip-192-168-71-211.us-east-2.compute.internal |  eksworkshop-eksctl-yourusername-ng-475d4bc8-Node  |  us-east-2a |  192.168.71.211 |  18.221.77.249 |
+|  ip-192-168-33-135.us-east-2.compute.internal |  eksworkshop-eksctl-yourusername-ng-475d4bc8-Node  |  us-east-2b |  192.168.33.135 |  13.59.167.90  |
 +-----------------------------------------------+---------------------------------------+-------------+-----------------+----------------+
 </code></pre>
 
@@ -5770,22 +5750,6 @@ kubectl apply -f group3-pod-netconfig.yaml
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -9651,19 +9615,19 @@ kubectl apply -f group3-pod-netconfig.yaml
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1571983600"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1571983600"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1571983600"></script>
-    <script src="../../../js/jquery.sticky.js?1571983600"></script>
-    <script src="../../../js/featherlight.min.js?1571983600"></script>
-    <script src="../../../js/highlight.pack.js?1571983600"></script>
+    <script src="../../../js/clipboard.min.js?1571985498"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1571985498"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1571985498"></script>
+    <script src="../../../js/jquery.sticky.js?1571985498"></script>
+    <script src="../../../js/featherlight.min.js?1571985498"></script>
+    <script src="../../../js/highlight.pack.js?1571985498"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1571983600"></script>
-    <script src="../../../js/learn.js?1571983600"></script>
-    <script src="../../../js/hugo-learn.js?1571983600"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1571985498"></script>
+    <script src="../../../js/learn.js?1571985498"></script>
+    <script src="../../../js/hugo-learn.js?1571985498"></script>
 
-    <link href="../../../mermaid/mermaid.css?1571983600" type="text/css" rel="stylesheet" />
-    <script src="../../../mermaid/mermaid.min.js?1571983600"></script>
+    <link href="../../../mermaid/mermaid.css?1571985498" type="text/css" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.min.js?1571985498"></script>
     <script>
 	var config = {
         startOnLoad:true,

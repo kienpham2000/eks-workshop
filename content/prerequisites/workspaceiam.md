@@ -51,7 +51,7 @@ aws iam get-instance-profile --instance-profile-name $INSTANCE_PROFILE_NAME --qu
 
 The output assumed-role name should contain:
 ```
-eksworkshop-admin
+eksworkshop-admin-yourusername
 ```
 
 #### VALID
@@ -60,9 +60,9 @@ If the _Arn_ contains the role name from above and an Instance ID, you may proce
 
 ```output
 {
-    "Account": "123456789012", 
-    "UserId": "AROA1SAMPLEAWSIAMROLE:i-01234567890abcdef", 
-    "Arn": "arn:aws:sts::123456789012:assumed-role/eksworkshop-admin/i-01234567890abcdef"
+    "Account": "123456789012",
+    "UserId": "AROA1SAMPLEAWSIAMROLE:i-01234567890abcdef",
+    "Arn": "arn:aws:sts::123456789012:assumed-role/eksworkshop-admin-yourusername/i-01234567890abcdef"
 }
 ```
 
@@ -72,8 +72,8 @@ If the _Arn contains `TeamRole`, `MasterRole`, or does not match the role name o
 
 ```output
 {
-    "Account": "123456789012", 
-    "UserId": "AROA1SAMPLEAWSIAMROLE:i-01234567890abcdef", 
+    "Account": "123456789012",
+    "UserId": "AROA1SAMPLEAWSIAMROLE:i-01234567890abcdef",
     "Arn": "arn:aws:sts::123456789012:assumed-role/TeamRole/MasterRole"
 }
 ```

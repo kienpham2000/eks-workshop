@@ -29,7 +29,7 @@ metadata:
   namespace: aws-operator
 data:
   accountID: "${ACCOUNT_ID}"
-  clusterName: "eksworkshop-eksctl"
+  clusterName: "eksworkshop-eksctl-yourusername"
   region: "${AWS_REGION}"
   bucketName: ""
 ---

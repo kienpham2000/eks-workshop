@@ -8,7 +8,7 @@ weight: 40
 
 CloudWatch Logs can be delivered to other services such as Amazon Elasticsearch for custom processing. This can be achieved by subscribing to a real-time feed of log events. A subscription filter defines the filter pattern to use for filtering which log events gets delivered to Elasticsearch, as well as information about where to send matching log events to.
 
-In this section, we’ll subscribe to the CloudWatch log events from the fluent-cloudwatch stream from the eks/eksworkshop-eksctl log group. This feed will be streamed to the Elasticsearch cluster.
+In this section, we’ll subscribe to the CloudWatch log events from the fluent-cloudwatch stream from the eks/eksworkshop-eksctl-yourusername log group. This feed will be streamed to the Elasticsearch cluster.
 
 Original instructions for this are available at:
 
@@ -37,7 +37,7 @@ aws iam attach-role-policy --role-name lambda_basic_execution --policy-arn arn:a
 
 Go to the [CloudWatch Logs console](https://console.aws.amazon.com/cloudwatch/home?#logs:)
 
-Select the log group `/eks/eksworkshop-eksctl/containers`. Click on `Actions` and select `Stream to Amazon ElasticSearch Service`.
+Select the log group `/eks/eksworkshop-eksctl-yourusername/containers`. Click on `Actions` and select `Stream to Amazon ElasticSearch Service`.
 ![Stream to ElasticSearch](/images/logging_cwl_es.png)
 
 Select the ElasticSearch Cluster `kubernetes-logs` and IAM role `lambda_basic_execution`

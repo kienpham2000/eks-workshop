@@ -18,21 +18,21 @@
     <title>Configure Cluster Autoscaler (CA) :: Amazon EKS Workshop</title>
 
     
-    <link href="../../css/nucleus.css?1571983600" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1571983600" rel="stylesheet">
-    <link href="../../css/hybrid.css?1571983600" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1571983600" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1571983600" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1571983600" rel="stylesheet">
-    <link href="../../css/theme.css?1571983600" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1571983600" rel="stylesheet">
-    <link href="../../css/jquery-ui.min.css?1571983600" rel="stylesheet">
+    <link href="../../css/nucleus.css?1571985498" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1571985498" rel="stylesheet">
+    <link href="../../css/hybrid.css?1571985498" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1571985498" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1571985498" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1571985498" rel="stylesheet">
+    <link href="../../css/theme.css?1571985498" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1571985498" rel="stylesheet">
+    <link href="../../css/jquery-ui.min.css?1571985498" rel="stylesheet">
     
-      <link href="../../css/theme-mine.css?1571983600" rel="stylesheet">
+      <link href="../../css/theme-mine.css?1571985498" rel="stylesheet">
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1571983600"></script>
-    <script src="../../js/jquery-ui-1.12.1.min.js?1571983600"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1571985498"></script>
+    <script src="../../js/jquery-ui-1.12.1.min.js?1571985498"></script>
 
 
     <style type="text/css">
@@ -64,14 +64,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1571983600"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1571983600"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1571985498"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1571985498"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1571983600"></script>
+<script type="text/javascript" src="../../js/search.js?1571985498"></script>
 
     
   </div>
@@ -196,26 +196,6 @@
   class="dd-item ">
   <a href="../../prerequisites/workspaceiam/">
     Update IAM settings for your Workspace
-    
-  </a>
-</li>
-
-
-
-
-    
-    
-    
-    
-
-
-
-
-
-<li data-nav-id="/prerequisites/aws_event/portal/" title="AWS Workshop Portal"
-  class="dd-item ">
-  <a href="../../prerequisites/aws_event/portal/">
-    AWS Workshop Portal
     
   </a>
 </li>
@@ -5619,7 +5599,7 @@ wget https://eksworkshop.com/scaling/deploy_ca.files/cluster_autoscaler.yml
 
 <p>We will need to provide the name of the Autoscaling Group that we want CA to manipulate. Collect the name of the Auto Scaling Group (ASG) containing your worker nodes. Record the name somewhere. We will use this later in the manifest file.</p>
 
-<p>You can find it in the console by following this <a href="https://console.aws.amazon.com/ec2/autoscaling/home?#AutoScalingGroups:id=eksctl-eksworkshop-eksctl-nodegroup-0-NodeGroup-SQG8QDVSR73G;view=details;filter=eksworkshop" target="_blank">link</a>.</p>
+<p>You can find it in the console by following this <a href="https://console.aws.amazon.com/ec2/autoscaling/home?#AutoScalingGroups:id=eksctl-eksworkshop-eksctl-yourusername-nodegroup-0-NodeGroup-SQG8QDVSR73G;view=details;filter=eksworkshop" target="_blank">link</a>.</p>
 
 <p><img src="../../images/scaling-asg.png" alt="ASG" /></p>
 
@@ -5648,7 +5628,7 @@ wget https://eksworkshop.com/scaling/deploy_ca.files/cluster_autoscaler.yml
   - --stderrthreshold=info
   - --cloud-provider=aws
   - --skip-nodes-with-local-storage=false
-  - --nodes=2:8:eksctl-eksworkshop-eksctl-nodegroup-0-NodeGroup-SQG8QDVSR73G
+  - --nodes=2:8:eksctl-eksworkshop-eksctl-yourusername-nodegroup-0-NodeGroup-SQG8QDVSR73G
 env:
   - name: AWS_REGION
     value: us-east-1
@@ -5784,22 +5764,6 @@ aws iam put-role-policy --role-name $ROLE_NAME --policy-name ASG-Policy-For-Work
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -9664,19 +9628,19 @@ aws iam put-role-policy --role-name $ROLE_NAME --policy-name ASG-Policy-For-Work
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1571983600"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1571983600"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1571983600"></script>
-    <script src="../../js/jquery.sticky.js?1571983600"></script>
-    <script src="../../js/featherlight.min.js?1571983600"></script>
-    <script src="../../js/highlight.pack.js?1571983600"></script>
+    <script src="../../js/clipboard.min.js?1571985498"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1571985498"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1571985498"></script>
+    <script src="../../js/jquery.sticky.js?1571985498"></script>
+    <script src="../../js/featherlight.min.js?1571985498"></script>
+    <script src="../../js/highlight.pack.js?1571985498"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1571983600"></script>
-    <script src="../../js/learn.js?1571983600"></script>
-    <script src="../../js/hugo-learn.js?1571983600"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1571985498"></script>
+    <script src="../../js/learn.js?1571985498"></script>
+    <script src="../../js/hugo-learn.js?1571985498"></script>
 
-    <link href="../../mermaid/mermaid.css?1571983600" type="text/css" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.min.js?1571983600"></script>
+    <link href="../../mermaid/mermaid.css?1571985498" type="text/css" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.min.js?1571985498"></script>
     <script>
 	var config = {
         startOnLoad:true,

@@ -435,10 +435,6 @@
   </url>
   
   <url>
-    <loc>/prerequisites/aws_event/portal/</loc>
-  </url>
-  
-  <url>
     <loc>/weave_flux/codepipeline/</loc>
   </url>
   

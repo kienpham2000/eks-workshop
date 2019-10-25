@@ -26,14 +26,14 @@ If `INSTANCE_PROFILE_ARN` is not set, please review: [/eksctl/test/](/eksctl/tes
 
 ```text
 # Example Output
-INSTANCE_PROFILE_ARN is arn:aws:iam::123456789101:instance-profile/eksctl-eksworkshop-eksctl-nodegroup-ng-abcd1234-NodeInstanceProfile-ABCDEF1234
+INSTANCE_PROFILE_ARN is arn:aws:iam::123456789101:instance-profile/eksctl-eksworkshop-eksctl-yourusername-nodegroup-ng-abcd1234-NodeInstanceProfile-ABCDEF1234
 ```
 
 #### Retrieve the Security Group Name
 We also need to collect the ID of the security group used with the existing worker nodes.
 
 ```bash
-STACK_NAME=$(aws cloudformation describe-stacks | jq -r '.Stacks[].StackName' | grep eksctl-eksworkshop-eksctl-nodegroup)
+STACK_NAME=$(aws cloudformation describe-stacks | jq -r '.Stacks[].StackName' | grep eksctl-eksworkshop-eksctl-yourusername-nodegroup)
 SG_ID=$(aws cloudformation describe-stack-resources --stack-name $STACK_NAME --logical-resource-id SG | jq -r '.StackResources[].PhysicalResourceId')
 echo $SG_ID
 ```
@@ -61,7 +61,7 @@ Once the console is open you will need to configure the missing parameters. Use 
 | Parameter | Value |
 |-----------|-------|
 |Stack Name: | eksworkshop-spot-workers |
-|Cluster Name: | eksworkshop-eksctl (or whatever you named your cluster) |
+|Cluster Name: | eksworkshop-eksctl-yourusername (or whatever you named your cluster) |
 |ClusterControlPlaneSecurityGroup: | Select from the dropdown. It will contain your cluster name and the words **'ControlPlaneSecurityGroup'** |
 |NodeInstanceProfile: | Use the Instance Profile ARN that copied in the step above. (e.g.eks-workshop-nodegroup)
 |UseExistingNodeSecurityGroups: | Leave as **'Yes'** |

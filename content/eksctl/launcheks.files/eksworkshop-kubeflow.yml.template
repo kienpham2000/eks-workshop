@@ -6,7 +6,7 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 availabilityZones: [${AWS_AZS}]
 metadata:
-  name: eksworkshop-eksctl
+  name: eksworkshop-eksctl-yourusername
   region: ${AWS_REGION}
   version: "1.13"
 

@@ -18,21 +18,21 @@
     <title>Deploy Fluentd :: Amazon EKS Workshop</title>
 
     
-    <link href="../../css/nucleus.css?1571983600" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1571983600" rel="stylesheet">
-    <link href="../../css/hybrid.css?1571983600" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1571983600" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1571983600" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1571983600" rel="stylesheet">
-    <link href="../../css/theme.css?1571983600" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1571983600" rel="stylesheet">
-    <link href="../../css/jquery-ui.min.css?1571983600" rel="stylesheet">
+    <link href="../../css/nucleus.css?1571985498" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1571985498" rel="stylesheet">
+    <link href="../../css/hybrid.css?1571985498" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1571985498" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1571985498" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1571985498" rel="stylesheet">
+    <link href="../../css/theme.css?1571985498" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1571985498" rel="stylesheet">
+    <link href="../../css/jquery-ui.min.css?1571985498" rel="stylesheet">
     
-      <link href="../../css/theme-mine.css?1571983600" rel="stylesheet">
+      <link href="../../css/theme-mine.css?1571985498" rel="stylesheet">
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1571983600"></script>
-    <script src="../../js/jquery-ui-1.12.1.min.js?1571983600"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1571985498"></script>
+    <script src="../../js/jquery-ui-1.12.1.min.js?1571985498"></script>
 
 
     <style type="text/css">
@@ -64,14 +64,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1571983600"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1571983600"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1571985498"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1571985498"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1571983600"></script>
+<script type="text/javascript" src="../../js/search.js?1571985498"></script>
 
     
   </div>
@@ -196,26 +196,6 @@
   class="dd-item ">
   <a href="../../prerequisites/workspaceiam/">
     Update IAM settings for your Workspace
-    
-  </a>
-</li>
-
-
-
-
-    
-    
-    
-    
-
-
-
-
-
-<li data-nav-id="/prerequisites/aws_event/portal/" title="AWS Workshop Portal"
-  class="dd-item ">
-  <a href="../../prerequisites/aws_event/portal/">
-    AWS Workshop Portal
     
   </a>
 </li>
@@ -5586,7 +5566,7 @@ wget https://eksworkshop.com/logging/deploy.files/fluentd.yml
 <p>Explore the fluentd.yml to see what is being deployed. There is a link at the bottom of this page. The Fluentd log agent configuration is located in the Kubernetes ConfigMap. Fluentd will be deployed as a DaemonSet, i.e. one pod per worker node. In our case, a 3 node cluster is used and so 3 pods will be shown in the output when we deploy.</p>
 
 
-<div class="notices warning" ><p>Update REGION and CLUSTER_NAME environment variables in fluentd.yml as required. They are set to us-west-2 and eksworkshop-eksctl by default.</p>
+<div class="notices warning" ><p>Update REGION and CLUSTER_NAME environment variables in fluentd.yml as required. They are set to us-west-2 and eksworkshop-eksctl-yourusername by default.</p>
 </div>
 
 
@@ -5598,7 +5578,7 @@ wget https://eksworkshop.com/logging/deploy.files/fluentd.yml
 <pre><code>kubectl get pods -w --namespace=kube-system
 </code></pre>
 
-<p>We are now ready to check that logs are arriving in <a href="https://console.aws.amazon.com/cloudwatch/home?#logStream:group=/eks/eksworkshop-eksctl/containers" target="_blank">CloudWatch Logs</a></p>
+<p>We are now ready to check that logs are arriving in <a href="https://console.aws.amazon.com/cloudwatch/home?#logStream:group=/eks/eksworkshop-eksctl-yourusername/containers" target="_blank">CloudWatch Logs</a></p>
 
 <p>Select the region that is mentioned in fluentd.yml to browse the Cloudwatch Log Group if required.</p>
 
@@ -5620,7 +5600,7 @@ wget https://eksworkshop.com/logging/deploy.files/fluentd.yml
 					<a href="../../logging/deploy.files/fluentd.yml" >
 						fluentd.yml
 					</a>
-					(5 ko)
+					(6 ko)
 				</li>
 			
 		
@@ -5678,22 +5658,6 @@ wget https://eksworkshop.com/logging/deploy.files/fluentd.yml
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -9558,19 +9522,19 @@ wget https://eksworkshop.com/logging/deploy.files/fluentd.yml
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1571983600"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1571983600"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1571983600"></script>
-    <script src="../../js/jquery.sticky.js?1571983600"></script>
-    <script src="../../js/featherlight.min.js?1571983600"></script>
-    <script src="../../js/highlight.pack.js?1571983600"></script>
+    <script src="../../js/clipboard.min.js?1571985498"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1571985498"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1571985498"></script>
+    <script src="../../js/jquery.sticky.js?1571985498"></script>
+    <script src="../../js/featherlight.min.js?1571985498"></script>
+    <script src="../../js/highlight.pack.js?1571985498"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1571983600"></script>
-    <script src="../../js/learn.js?1571983600"></script>
-    <script src="../../js/hugo-learn.js?1571983600"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1571985498"></script>
+    <script src="../../js/learn.js?1571985498"></script>
+    <script src="../../js/hugo-learn.js?1571985498"></script>
 
-    <link href="../../mermaid/mermaid.css?1571983600" type="text/css" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.min.js?1571983600"></script>
+    <link href="../../mermaid/mermaid.css?1571985498" type="text/css" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.min.js?1571985498"></script>
     <script>
 	var config = {
         startOnLoad:true,

@@ -9,6 +9,6 @@ cd ~/environment
 kubectl delete -f ~/environment/fluentd/fluentd.yml
 rm -rf ~/environment/fluentd/
 aws es delete-elasticsearch-domain --domain-name kubernetes-logs
-aws logs delete-log-group --log-group-name /eks/eksworkshop-eksctl/containers
+aws logs delete-log-group --log-group-name /eks/eksworkshop-eksctl-yourusername/containers
 rm -rf ~/environment/iam_policy/
 ```

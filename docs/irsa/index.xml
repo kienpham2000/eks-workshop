@@ -70,7 +70,7 @@ curl -LO https://eksworkshop.com/irsa/deploy.files/iam-pod.yaml kubectl apply -f
       <description>To cleanup, follow the below steps.
 To remove sample application
 kubectl delete -f iam-pod.yaml  To remove IAM role and Service Account stack from cloudformation
-eksctl delete iamserviceaccount --name iam-test --namespace default --cluster eksworkshop-eksctl  </description>
+eksctl delete iamserviceaccount --name iam-test --namespace default --cluster eksworkshop-eksctl-yourusername  </description>
     </item>
     
   </channel>

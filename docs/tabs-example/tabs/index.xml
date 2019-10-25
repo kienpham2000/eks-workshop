@@ -18,7 +18,7 @@
       
       <guid>/tabs-example/tabs/eksctl/</guid>
       <description>To create a basic EKS cluster, run:
-eksctl create cluster --name=eksworkshop-eksctl --nodes=3 --node-ami=auto --region=${AWS_REGION}  Launching EKS and all the dependencies will take approximately 15 minutes
+eksctl create cluster --name=eksworkshop-eksctl-yourusername --nodes=3 --node-ami=auto --region=${AWS_REGION}  Launching EKS and all the dependencies will take approximately 15 minutes
  </description>
     </item>
     

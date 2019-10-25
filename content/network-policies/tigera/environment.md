@@ -20,10 +20,10 @@ sudo chmod +x /usr/local/bin/tsctl
 
 Next, you will need to set some environment variables.  There are commands for some of them, but a few you need to supply.
 
-The $CLUSTER_NAME variable is the same that you used to create the cluster using the 'eksctl' command at the beginning of the workshop.  If you followed the directions, it will be 'eksworkshop-eksctl'
+The $CLUSTER_NAME variable is the same that you used to create the cluster using the 'eksctl' command at the beginning of the workshop.  If you followed the directions, it will be 'eksworkshop-eksctl-yourusername'
 
 ```
-CLUSTER_NAME=eksworkshop-eksctl
+CLUSTER_NAME=eksworkshop-eksctl-yourusername
 ```
 
 The next thing we need to manually set is your Tigera Secure Cloud Edition $TS_TOKEN.  This can be found by checking your [Zendesk tickets](https://support.tigera.io/hc/en-us/requests).  The Token can be found in your welcome ticket and is a _UUID_, or long string of hex digits.

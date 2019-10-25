@@ -41,7 +41,7 @@ sudo mv aws-iam-authenticator /usr/local/bin
 Set Kubeflow application name:
 
 ```
-export AWS_CLUSTER_NAME=eksworkshop-eksctl
+export AWS_CLUSTER_NAME=eksworkshop-eksctl-yourusername
 export KFAPP=${AWS_CLUSTER_NAME}
 ```
 

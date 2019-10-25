@@ -18,21 +18,21 @@
     <title>Update IAM settings for your Workspace :: Amazon EKS Workshop</title>
 
     
-    <link href="../../css/nucleus.css?1571983599" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1571983599" rel="stylesheet">
-    <link href="../../css/hybrid.css?1571983599" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1571983599" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1571983599" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1571983599" rel="stylesheet">
-    <link href="../../css/theme.css?1571983599" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1571983599" rel="stylesheet">
-    <link href="../../css/jquery-ui.min.css?1571983599" rel="stylesheet">
+    <link href="../../css/nucleus.css?1571985497" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1571985497" rel="stylesheet">
+    <link href="../../css/hybrid.css?1571985497" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1571985497" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1571985497" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1571985497" rel="stylesheet">
+    <link href="../../css/theme.css?1571985497" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1571985497" rel="stylesheet">
+    <link href="../../css/jquery-ui.min.css?1571985497" rel="stylesheet">
     
-      <link href="../../css/theme-mine.css?1571983599" rel="stylesheet">
+      <link href="../../css/theme-mine.css?1571985497" rel="stylesheet">
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1571983599"></script>
-    <script src="../../js/jquery-ui-1.12.1.min.js?1571983599"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1571985497"></script>
+    <script src="../../js/jquery-ui-1.12.1.min.js?1571985497"></script>
 
 
     <style type="text/css">
@@ -64,14 +64,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1571983599"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1571983599"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1571985497"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1571985497"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1571983599"></script>
+<script type="text/javascript" src="../../js/search.js?1571985497"></script>
 
     
   </div>
@@ -196,26 +196,6 @@
   class="dd-item active">
   <a href="../../prerequisites/workspaceiam/">
     Update IAM settings for your Workspace
-    
-  </a>
-</li>
-
-
-
-
-    
-    
-    
-    
-
-
-
-
-
-<li data-nav-id="/prerequisites/aws_event/portal/" title="AWS Workshop Portal"
-  class="dd-item ">
-  <a href="../../prerequisites/aws_event/portal/">
-    AWS Workshop Portal
     
   </a>
 </li>
@@ -5643,7 +5623,7 @@ aws iam get-instance-profile --instance-profile-name $INSTANCE_PROFILE_NAME --qu
 
 <p>The output assumed-role name should contain:</p>
 
-<pre><code>eksworkshop-admin
+<pre><code>eksworkshop-admin-yourusername
 </code></pre>
 
 <h4 id="valid">VALID</h4>
@@ -5651,9 +5631,9 @@ aws iam get-instance-profile --instance-profile-name $INSTANCE_PROFILE_NAME --qu
 <p>If the <em>Arn</em> contains the role name from above and an Instance ID, you may proceed.</p>
 
 <pre><code class="language-output">{
-    &quot;Account&quot;: &quot;123456789012&quot;, 
-    &quot;UserId&quot;: &quot;AROA1SAMPLEAWSIAMROLE:i-01234567890abcdef&quot;, 
-    &quot;Arn&quot;: &quot;arn:aws:sts::123456789012:assumed-role/eksworkshop-admin/i-01234567890abcdef&quot;
+    &quot;Account&quot;: &quot;123456789012&quot;,
+    &quot;UserId&quot;: &quot;AROA1SAMPLEAWSIAMROLE:i-01234567890abcdef&quot;,
+    &quot;Arn&quot;: &quot;arn:aws:sts::123456789012:assumed-role/eksworkshop-admin-yourusername/i-01234567890abcdef&quot;
 }
 </code></pre>
 
@@ -5662,8 +5642,8 @@ aws iam get-instance-profile --instance-profile-name $INSTANCE_PROFILE_NAME --qu
 <p>If the _Arn contains <code>TeamRole</code>, <code>MasterRole</code>, or does not match the role name output above, <span style="color: red;"><strong>DO NOT PROCEED</strong></span>. Go back and confirm the steps on this page.</p>
 
 <pre><code class="language-output">{
-    &quot;Account&quot;: &quot;123456789012&quot;, 
-    &quot;UserId&quot;: &quot;AROA1SAMPLEAWSIAMROLE:i-01234567890abcdef&quot;, 
+    &quot;Account&quot;: &quot;123456789012&quot;,
+    &quot;UserId&quot;: &quot;AROA1SAMPLEAWSIAMROLE:i-01234567890abcdef&quot;,
     &quot;Arn&quot;: &quot;arn:aws:sts::123456789012:assumed-role/TeamRole/MasterRole&quot;
 }
 </code></pre>
@@ -5805,22 +5785,6 @@ aws iam get-instance-profile --instance-profile-name $INSTANCE_PROFILE_NAME --qu
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -9583,7 +9547,7 @@ aws iam get-instance-profile --instance-profile-name $INSTANCE_PROFILE_NAME --qu
             <a class="nav nav-prev" href="../../prerequisites/ec2instance/" title="Attach the IAM role to your Workspace"> <i class="fas fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="../../prerequisites/aws_event/portal/" title="AWS Workshop Portal" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="../../prerequisites/clone/" title="Clone the Service Repos" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
         
     </div>
 
@@ -9592,19 +9556,19 @@ aws iam get-instance-profile --instance-profile-name $INSTANCE_PROFILE_NAME --qu
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1571983599"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1571983599"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1571983599"></script>
-    <script src="../../js/jquery.sticky.js?1571983599"></script>
-    <script src="../../js/featherlight.min.js?1571983599"></script>
-    <script src="../../js/highlight.pack.js?1571983599"></script>
+    <script src="../../js/clipboard.min.js?1571985497"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1571985497"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1571985497"></script>
+    <script src="../../js/jquery.sticky.js?1571985497"></script>
+    <script src="../../js/featherlight.min.js?1571985497"></script>
+    <script src="../../js/highlight.pack.js?1571985497"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1571983599"></script>
-    <script src="../../js/learn.js?1571983599"></script>
-    <script src="../../js/hugo-learn.js?1571983599"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1571985497"></script>
+    <script src="../../js/learn.js?1571985497"></script>
+    <script src="../../js/hugo-learn.js?1571985497"></script>
 
-    <link href="../../mermaid/mermaid.css?1571983599" type="text/css" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.min.js?1571983599"></script>
+    <link href="../../mermaid/mermaid.css?1571985497" type="text/css" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.min.js?1571985497"></script>
     <script>
 	var config = {
         startOnLoad:true,

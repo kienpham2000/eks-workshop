@@ -196,7 +196,7 @@ spec:
           - name: REGION
             value: us-west-2
           - name: CLUSTER_NAME
-            value: eksworkshop-eksctl
+            value: eksworkshop-eksctl-yourusername
         resources:
           limits:
             memory: 200Mi

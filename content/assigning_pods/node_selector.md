@@ -9,11 +9,11 @@ nodeSelector is the simplest recommended form of node selection constraint. node
 
 #### Attach a label to the node
 
-Run kubectl get nodes to get the names of your cluster’s nodes. 
+Run kubectl get nodes to get the names of your cluster’s nodes.
 ```
 kubectl get nodes
 ```
-Output will be like 
+Output will be like
 ```
 NAME                                           STATUS    ROLES     AGE       VERSION
 ip-192-168-15-64.us-west-2.compute.internal    Ready     <none>    8d        v1.12.7
@@ -21,13 +21,13 @@ ip-192-168-38-150.us-west-2.compute.internal   Ready     <none>    8d        v1.
 ip-192-168-86-147.us-west-2.compute.internal   Ready     <none>    7d23h     v1.12.7
 ip-192-168-92-222.us-west-2.compute.internal   Ready     <none>    8d        v1.12.7
 ```
-Pick out the one that you want to add a label to, and then run 
+Pick out the one that you want to add a label to, and then run
 ```
-kubectl label nodes <node-name> <label-key>=<label-value> 
+kubectl label nodes <node-name> <label-key>=<label-value>
 ```
-to add a label to the node you’ve chosen. 
+to add a label to the node you’ve chosen.
 
-For example, if my node name is ‘ip-192-168-15-64.us-west-2.compute.internal’ and my desired label is ‘disktype=ssd’, then I can run 
+For example, if my node name is ‘ip-192-168-15-64.us-west-2.compute.internal’ and my desired label is ‘disktype=ssd’, then I can run
 ```
 kubectl label nodes ip-192-168-15-64.us-west-2.compute.internal disktype=ssd
 ```
@@ -39,10 +39,10 @@ kubectl get nodes --show-labels
 Output will be like
 ```
 NAME                                           STATUS    ROLES     AGE       VERSION   LABELS
-ip-192-168-15-64.us-west-2.compute.internal    Ready     <none>    8d        v1.12.7   alpha.eksctl.io/cluster-name=eksworkshop-eksctl,alpha.eksctl.io/instance-id=i-064fdae0afd3cbe8b,alpha.eksctl.io/nodegroup-name=ng-cd62916d,beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=m5.large,beta.kubernetes.io/os=linux,disktype=ssd,failure-domain.beta.kubernetes.io/region=us-west-2,failure-domain.beta.kubernetes.io/zone=us-west-2d,kubernetes.io/hostname=ip-192-168-15-64.us-west-2.compute.internal
-ip-192-168-38-150.us-west-2.compute.internal   Ready     <none>    8d        v1.12.7   alpha.eksctl.io/cluster-name=eksworkshop-eksctl,alpha.eksctl.io/instance-id=i-0420598c17da0a4b4,alpha.eksctl.io/nodegroup-name=ng-cd62916d,beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=m5.large,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=us-west-2,failure-domain.beta.kubernetes.io/zone=us-west-2c,kubernetes.io/hostname=ip-192-168-38-150.us-west-2.compute.internal
-ip-192-168-86-147.us-west-2.compute.internal   Ready     <none>    7d23h     v1.12.7   alpha.eksctl.io/cluster-name=eksworkshop-eksctl,alpha.eksctl.io/instance-id=i-02e33f4429c64e628,alpha.eksctl.io/nodegroup-name=ng-cd62916d,beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=m5.large,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=us-west-2,failure-domain.beta.kubernetes.io/zone=us-west-2b,kubernetes.io/hostname=ip-192-168-86-147.us-west-2.compute.internal
-ip-192-168-92-222.us-west-2.compute.internal   Ready     <none>    8d        v1.12.7   alpha.eksctl.io/cluster-name=eksworkshop-eksctl,alpha.eksctl.io/instance-id=i-02eadff5d2af1ce12,alpha.eksctl.io/nodegroup-name=ng-cd62916d,beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=m5.large,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=us-west-2,failure-domain.beta.kubernetes.io/zone=us-west-2b,kubernetes.io/hostname=ip-192-168-92-222.us-west-2.compute.internal
+ip-192-168-15-64.us-west-2.compute.internal    Ready     <none>    8d        v1.12.7   alpha.eksctl.io/cluster-name=eksworkshop-eksctl-yourusername,alpha.eksctl.io/instance-id=i-064fdae0afd3cbe8b,alpha.eksctl.io/nodegroup-name=ng-cd62916d,beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=m5.large,beta.kubernetes.io/os=linux,disktype=ssd,failure-domain.beta.kubernetes.io/region=us-west-2,failure-domain.beta.kubernetes.io/zone=us-west-2d,kubernetes.io/hostname=ip-192-168-15-64.us-west-2.compute.internal
+ip-192-168-38-150.us-west-2.compute.internal   Ready     <none>    8d        v1.12.7   alpha.eksctl.io/cluster-name=eksworkshop-eksctl-yourusername,alpha.eksctl.io/instance-id=i-0420598c17da0a4b4,alpha.eksctl.io/nodegroup-name=ng-cd62916d,beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=m5.large,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=us-west-2,failure-domain.beta.kubernetes.io/zone=us-west-2c,kubernetes.io/hostname=ip-192-168-38-150.us-west-2.compute.internal
+ip-192-168-86-147.us-west-2.compute.internal   Ready     <none>    7d23h     v1.12.7   alpha.eksctl.io/cluster-name=eksworkshop-eksctl-yourusername,alpha.eksctl.io/instance-id=i-02e33f4429c64e628,alpha.eksctl.io/nodegroup-name=ng-cd62916d,beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=m5.large,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=us-west-2,failure-domain.beta.kubernetes.io/zone=us-west-2b,kubernetes.io/hostname=ip-192-168-86-147.us-west-2.compute.internal
+ip-192-168-92-222.us-west-2.compute.internal   Ready     <none>    8d        v1.12.7   alpha.eksctl.io/cluster-name=eksworkshop-eksctl-yourusername,alpha.eksctl.io/instance-id=i-02eadff5d2af1ce12,alpha.eksctl.io/nodegroup-name=ng-cd62916d,beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=m5.large,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=us-west-2,failure-domain.beta.kubernetes.io/zone=us-west-2b,kubernetes.io/hostname=ip-192-168-92-222.us-west-2.compute.internal
 ```
 #### Add a nodeSelector field to your pod configuration
 Take whatever pod config file you want to run, and add a nodeSelector section to it, like this. For example, if this is my pod config:

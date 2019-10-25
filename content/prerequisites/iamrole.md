@@ -9,5 +9,5 @@ weight: 16
 1. Confirm that **AWS service** and **EC2** are selected, then click **Next** to view permissions.
 1. Confirm that **AdministratorAccess** is checked, then click **Next: Tags** to assign tags.
 1. Take the defaults, and click **Next: Review** to review.
-1. Enter **eksworkshop-admin** for the Name, and click **Create role**.
+1. Enter **eksworkshop-admin-yourusername** for the Name, and click **Create role**.
 ![createrole](/images/createrole.png)

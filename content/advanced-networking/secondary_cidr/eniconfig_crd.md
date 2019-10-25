@@ -54,7 +54,7 @@ for i in "${INSTANCE_IDS[@]}"
 do
 	echo "SecurityGroup for EC2 instance $i ..."
   aws ec2 describe-instances --instance-ids $INSTANCE_IDS | jq -r '.Reservations[].Instances[].SecurityGroups[].GroupId'
-done  
+done
 ```
 ```
 SecurityGroup for EC2 instance i-03ea1a083c924cd78 ...
@@ -88,15 +88,15 @@ Similarly, create custom resource **group3-pod-netconfig.yaml** for third subnet
 
 Check the instance details using this command as you will need AZ info when you apply annotation to Worker nodes using custom network config
 ```
-aws ec2 describe-instances --filters "Name=tag:Name,Values=eksworkshop*" --query 'Reservations[*].Instances[*].[PrivateDnsName,Tags[?Key==`Name`].Value|[0],Placement.AvailabilityZone,PrivateIpAddress,PublicIpAddress]' --output table   
+aws ec2 describe-instances --filters "Name=tag:Name,Values=eksworkshop*" --query 'Reservations[*].Instances[*].[PrivateDnsName,Tags[?Key==`Name`].Value|[0],Placement.AvailabilityZone,PrivateIpAddress,PublicIpAddress]' --output table
 ```
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------
 |                                                            DescribeInstances                                                           |
 +-----------------------------------------------+---------------------------------------+-------------+-----------------+----------------+
-|  ip-192-168-9-228.us-east-2.compute.internal  |  eksworkshop-eksctl-ng-475d4bc8-Node  |  us-east-2c |  192.168.9.228  |  18.191.57.131 |
-|  ip-192-168-71-211.us-east-2.compute.internal |  eksworkshop-eksctl-ng-475d4bc8-Node  |  us-east-2a |  192.168.71.211 |  18.221.77.249 |
-|  ip-192-168-33-135.us-east-2.compute.internal |  eksworkshop-eksctl-ng-475d4bc8-Node  |  us-east-2b |  192.168.33.135 |  13.59.167.90  |
+|  ip-192-168-9-228.us-east-2.compute.internal  |  eksworkshop-eksctl-yourusername-ng-475d4bc8-Node  |  us-east-2c |  192.168.9.228  |  18.191.57.131 |
+|  ip-192-168-71-211.us-east-2.compute.internal |  eksworkshop-eksctl-yourusername-ng-475d4bc8-Node  |  us-east-2a |  192.168.71.211 |  18.221.77.249 |
+|  ip-192-168-33-135.us-east-2.compute.internal |  eksworkshop-eksctl-yourusername-ng-475d4bc8-Node  |  us-east-2b |  192.168.33.135 |  13.59.167.90  |
 +-----------------------------------------------+---------------------------------------+-------------+-----------------+----------------+
 ```
 

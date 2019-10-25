@@ -38,7 +38,7 @@ In this workshop we will give you the commands to download the Linux binaries. I
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/prerequisites/iamrole/</guid>
-      <description> Follow this deep link to create an IAM role with Administrator access. Confirm that AWS service and EC2 are selected, then click Next to view permissions. Confirm that AdministratorAccess is checked, then click Next: Tags to assign tags. Take the defaults, and click Next: Review to review. Enter eksworkshop-admin for the Name, and click Create role.   </description>
+      <description> Follow this deep link to create an IAM role with Administrator access. Confirm that AWS service and EC2 are selected, then click Next to view permissions. Confirm that AdministratorAccess is checked, then click Next: Tags to assign tags. Take the defaults, and click Next: Review to review. Enter eksworkshop-admin-yourusername for the Name, and click Create role.   </description>
     </item>
     
     <item>
@@ -47,7 +47,7 @@ In this workshop we will give you the commands to download the Linux binaries. I
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/prerequisites/ec2instance/</guid>
-      <description> Follow this deep link to find your Cloud9 EC2 instance Select the instance, then choose Actions / Instance Settings / Attach/Replace IAM Role  Choose eksworkshop-admin from the IAM Role drop down, and select Apply   </description>
+      <description> Follow this deep link to find your Cloud9 EC2 instance Select the instance, then choose Actions / Instance Settings / Attach/Replace IAM Role  Choose eksworkshop-admin-yourusername from the IAM Role drop down, and select Apply   </description>
     </item>
     
     <item>
@@ -58,17 +58,6 @@ In this workshop we will give you the commands to download the Linux binaries. I
       <guid>/prerequisites/workspaceiam/</guid>
       <description>Cloud9 normally manages IAM credentials dynamically. This isn&amp;rsquo;t currently compatible with the EKS IAM authentication, so we will disable it and rely on the IAM role instead.
   Return to your workspace and click the sprocket, or launch a new tab to open the Preferences tab Select AWS SETTINGS Turn off AWS managed temporary credentials Close the Preferences tab   To ensure temporary credentials aren&amp;rsquo;t already in place we will also remove any existing credentials file:</description>
-    </item>
-    
-    <item>
-      <title>AWS Workshop Portal</title>
-      <link>/prerequisites/aws_event/portal/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/prerequisites/aws_event/portal/</guid>
-      <description>Login to AWS Workshop Portal This workshop creates an AWS acccount and a Cloud9 environment. You will need the Participant Hash provided upon entry, and your email address to track your unique session.
-Connect to the portal by clicking the button or browsing to https://dashboard.eventengine.run/.
-Once you have completed the step above, you can head straight to Create a Workspace</description>
     </item>
     
     <item>

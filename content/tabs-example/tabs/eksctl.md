@@ -6,7 +6,7 @@ weight: 20
 
 To create a basic EKS cluster, run:
 ```
-eksctl create cluster --name=eksworkshop-eksctl --nodes=3 --node-ami=auto --region=${AWS_REGION}
+eksctl create cluster --name=eksworkshop-eksctl-yourusername --nodes=3 --node-ami=auto --region=${AWS_REGION}
 ```
 {{% notice info %}}
 Launching EKS and all the dependencies will take approximately 15 minutes

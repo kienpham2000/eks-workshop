@@ -25,7 +25,7 @@ Output
 ```
 {
         "clusters": [
-                "eksworkshop-eksctl"
+                "eksworkshop-eksctl-yourusername"
                     ]
 }
 ```
